@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+   integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+   crossorigin=""/>
+</head>
+
+<body>
+  <h2> Weather Search </h2>
+  <div class="container">
+    <input id="areaInput" placeholder="Enter city name or zip code">
+    <button id='submit'>GO! GO!</button>
+  </div>
+<p id='alert' style='color:red'></p>
+<p id='temp'></p>
+<p id='wind'></p>
+<p id='desc'></p>
+<img id='icon' src=''>
+  <div class="results-container" style="display: flex; align-items: left">
+    <div id="map" style="height: 700px;width: 600px"></div>
+    <div style="margin-left: 20px">
+      <h4>Previous Searches</h4>
+      <div id="previousSearches"></div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+   integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+   crossorigin=""></script>
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
